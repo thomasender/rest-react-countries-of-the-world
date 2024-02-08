@@ -1,0 +1,51 @@
+@import "~bootstrap/scss/bootstrap";
+
+ul li {
+  list-style: none;
+}
+
+.flag {
+    min-width: 80px;
+}
+
+.country {
+    width: 100%;
+    min-width: 100px;
+    max-width: 600px;
+}
+
+.population {
+    min-width: 120px;
+}
+
+.page-number {
+    color: green;
+    cursor: pointer;
+}
+
+.map-container {
+  height:  400px;
+  width:  100%;
+}
+
+.map {
+  width:  100%;
+  max-width: 50vw;
+  height: 200px;
+  border-radius: 20px;
+  
+}
+
+.detail-flag {
+  width: 100%;
+  max-width: 200px;
+}
+
+.country-info {
+  max-height: 200px;
+  overflow: auto;
+}
+
+.search-box {
+  width: 100%;
+}
