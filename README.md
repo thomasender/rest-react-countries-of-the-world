@@ -1,30 +1,41 @@
-# React + TypeScript + Vite
+# Countries of the World
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a web application that displays information about different countries. It uses the Rest Countries API to fetch country data and provides features like searching, sorting, and detailed views for each country.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- List of countries with details like name, population, and flag.
+- Search functionality to filter countries.
+- Sorting functionality to sort countries by different parameters.
+- Detailed view for each country with additional information.
+- Map view for each country using Mapbox GL.
+- SEO-friendly with dynamic title and meta tags for each page.
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- [React](https://reactjs.org/): A JavaScript library for building user interfaces.
+- [React Context](https://reactjs.org/docs/context.html): Used for state management.
+- [Axios](https://axios-http.com/): Used to make HTTP requests to the Rest Countries API.
+- [Rest Countries API](https://restcountries.com/): Provides information about different countries.
+- [LocalStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage): Used to persist state across sessions.
+- [Bootstrap](https://getbootstrap.com/): Used for styling.
+- [react-table](https://react-table.tanstack.com/): Used to display country data in a table format.
+- [react-router-dom](https://reactrouter.com/web/guides/quick-start): Used for routing.
+- [Mapbox GL](https://docs.mapbox.com/mapbox-gl-js/guides/): Used to display maps for each country.
+- [react-helmet](https://github.com/nfl/react-helmet): Used to manage document head tags for SEO.
 
-- Configure the top-level `parserOptions` property like this:
+## Installation
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+To install the dependencies, run:
+
+```bash
+yarn
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+To start the development server, run:
+
+```bash
+yarn dev
+```
+
+The application will start on http://localhost:5173
